@@ -1,0 +1,11 @@
+require("monitors")
+require("autostart")
+require("decorations")
+require("input")
+require("keybindings")
+require("rules")
+require("misc")
+--require("cursor")
+--require("glass")
+
+--require("dockyrs")

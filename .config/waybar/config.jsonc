@@ -1,0 +1,36 @@
+[
+    {
+        "layer": "top",
+        "position": "top",
+        "height": 18,
+        "exclusive": false,
+        "modules-left": [],
+        "modules-center": ["clock"],
+        "modules-right": [],
+
+        "clock": {
+            "format": "{:%H:%M}",
+            "tooltip-format": "{:%A, %d.%m.%Y}"
+        }
+    },
+  {
+        "layer": "top",
+        "position": "bottom",
+        "height": 18,
+        "exclusive": false,
+        "modules-left": [],
+        "modules-center": ["hyprland/workspaces", "pulseaudio" ],
+        "modules-right": [],
+
+        "hyprland/workspaces": {
+            "format": "[{id}]",
+            "active-only": true
+        },
+        "pulseaudio": {
+            "format": "[{volume}%]",
+            "on-click": "pavucontrol",
+            "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+            "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%"
+        }
+    },
+]
