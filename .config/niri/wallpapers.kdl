@@ -1,0 +1,6 @@
+// background for workspace and backdrop
+spawn-sh-at-startup "awww-daemon"
+layer-rule {
+    match namespace="^awww-daemon$"
+    place-within-backdrop true
+}
